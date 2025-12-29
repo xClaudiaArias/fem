@@ -1,0 +1,149 @@
+:root {
+    --green500: hsl(158, 36%, 37%);
+    --green700: hsl(158, 42%, 18%);
+
+    /* Neutral */
+
+    --black: hsl(212, 21%, 14%);
+    --grey: hsl(228, 12%, 48%);
+    --cream: hsl(30, 38%, 92%);
+    --white: hsl(0, 0%, 100%);
+}
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cream);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main {
+    width: 600px;
+    height: 450px;
+    background-color: var(--white);
+    display: flex;
+    border-radius: 10px;
+}
+
+img {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 50%;
+}
+
+main #right {
+    flex: 1;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+#label {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--grey);
+    font-family: "Montserrat", sans-serif;
+}
+
+#title {
+    font-family: "Fraunces", serif;
+    font-size: 32px;
+    width: 200px;
+}
+
+#description {
+    font-family: "Montserrat", sans-serif;
+    color: var(--grey);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.6;
+    width: 220px;
+}
+
+#price {
+    font-family: "Fraunces", serif;
+    color: var(--green500);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#price sup s {
+    font-family: "Montserrat", sans-serif;
+    color: var(--grey);
+    font-size: 12px;
+    font-weight: 400;
+    padding: 0 10px;
+}
+
+button {
+    background-color: var(--green500);
+    color: var(--white);
+    font-size: 13px;
+    font-weight: 700;
+    height: 44px;
+    border: none;
+    border-radius: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+
+button:hover {
+    background-color: var(--green700);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        padding: 20px;
+    }
+    main {
+        width: 95vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
+    img {
+        width: 100%;
+        height: 50%;
+        object-fit: cover;
+        object-position: 80% 40%;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+    }
+
+    #right p,
+    #right #title {
+        width: 100%;
+    }
+
+
+    #price {
+        padding: 10px 0;
+    }
+}
+
+
+
