@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Blue500: hsl(215, 51%, 70%);
+    --Cyan400: hsl(178, 100%, 50%);
+    
+    /* Neutral */
+    
+    --Blue950-main-bgG: hsl(217, 54%, 11%);
+    --Blue900-card-bg: hsl(216, 50%, 16%);
+    --Blue800-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Blue950-main-bgG);
+    flex-direction: column;
+    gap: 40px;
+}
+
+main {
+    width: 400px;
+    height: 600px;
+    background-color: var(--Blue900-card-bg);
+    border-radius: 15px;
+    box-shadow: 0 8px 15px 10px hsl(216, 53%, 10%);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+#image-container {
+    width: 350px;
+    height: 350px;
+    border: 1px soild red;
+    background-color: aqua;
+    background: black;
+    color: red;
+    background-image: url('/images/image-equilibrium.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+#svg-container {
+    background-color: hsla(178, 100%, 50%, .3);
+    width: inherit;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#svg-container:hover {
+    opacity: 1;
+}
+
+main h1 {
+    align-self: flex-start;
+    color: white;
+    font-size: 18px;
+    padding: 20px 0 10px;
+}
+
+main h1:hover {
+    cursor: pointer;
+    color: var(--Cyan400);
+}
+
+main #description {
+    color: var(--Blue500);
+    font-weight: 100px;
+}
+
+main #stats-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: var(--Blue500);
+    padding: 20px 0;
+}
+
+main #stats-container div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+}
+
+
+main hr {
+    width: 100%;
+    background-color: var(--Blue800-line);
+    border: none;
+    height: 1px;
+    margin-bottom: 10px;
+}
+
+main #creator-container {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: var(--Blue500);
+}
+
+main #creator-container span {
+    color: white;
+    font-weight: 500;
+}
+
+main #creator-container span:hover {
+    color: var(--Cyan400);
+    cursor: pointer;
+}
+
+main #creator-container img {
+    width: 24px;
+    height: 24px;
+    border: 1px solid white;
+    border-radius: 100%;
+}
