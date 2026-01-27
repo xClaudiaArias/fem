@@ -6,7 +6,7 @@
 
 /* Neutral */
 
-    --White-maini: hsl(0, 0%, 100%);
+    --White-main: hsl(0, 0%, 100%);
     --White-paragraph: hsla(0, 0%, 100%, 0.75);
     --White-stats-heading: hsla(0, 0%, 100%, 0.6);
 }
@@ -16,12 +16,89 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Inter", sans-serif;
 }
 
 body {
+    width: 100vw;
+    height: 100vh;
     background-color: var(--Navy950) ;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 10px;
+    color: var(--White-paragraph);
+}
+
+main {
+    display: flex;
+    width: 940px;
+    height: 420px;
+    background-color: var(--Blue950);
+    color: var(--White-paragraph);
+    border-radius: 10px;
+}
+
+main #left {
+    background-color: var(--Blue950);
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+}
+main #left h1 {
+    color: var(--White-main);
+    width: 350px;
+    font-weight: 600;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+main #left #description {
+    color: var(--White-stats-heading);
+    width: 330px;
+    font-size: 14px;
+}
+main #left h1 span {
+    color: var(--Purple500);
+}
+
+main #left #stats-wrapper {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    margin-top: auto;
+    gap: 50px;
+}
+
+main #left #stats-wrapper .temps p:nth-child(1) {
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--White-paragraph);
+    padding-bottom: 4px;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+main #left #stats-wrapper .temps p:nth-child(2) {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: var(--White-stats-heading);
+} 
+
+main #right {
+    height: 420px;
+}
+
+main #right #image {
+    background-image: url('/images/image-header-desktop.jpg');
+    background-color: var(--Purple500);
+    background-blend-mode: multiply ;
+    width: 500px;
+    height: 420px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
