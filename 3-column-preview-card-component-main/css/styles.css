@@ -1,0 +1,90 @@
+:root {
+    --Gold-500: hsl(31, 77%, 52%);
+    --Cyan-800: hsl(184, 100%, 22%);
+    --Green-950: hsl(179, 100%, 13%);
+    /* Neutral */
+    
+    --Transparent-white: hsla(0, 0%, 100%, 0.75); /* (paragraphs )*/
+    --Gray-100: hsl(0, 0%, 95%); /* (background, headings, buttons) */
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--Gray-100);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 300;
+    color: var(--Transparent-white);
+}
+
+main {
+    width: 65%;
+    height: 650px;
+    display: flex;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+h2 {
+    font-family: "Big Shoulders", sans-serif;
+    text-transform: uppercase;
+    font-size: 44px;
+    color: white;
+    font-weight: 400;
+}
+
+p {
+    border: 1px solid blue;
+    width: 240px;
+    line-height: 1.8;
+    font-size: 18px;
+    color: var(--Transparent-white);
+}
+
+button {
+    margin-top: auto;
+    width: 150px;
+    height: 50px;
+    border-radius: 100px;
+    border: none;
+    font-size: 16px;
+    padding: 10px;
+    font-weight: 500;
+}
+
+.btn-gold{
+    color: var(--Gold-500);
+}
+
+.btn-cyan {
+    color: var(--Cyan-800);
+}
+
+.btn-green {
+    color: var(--Green-950);
+}
+
+#sedans-container, 
+#suv-container,
+#luxury-container {
+    display: flex;flex-direction: column;
+    padding: 50px;
+    flex: 1;
+}
+
+#sedans-container {
+    background-color: var(--Gold-500);
+}
+
+#suv-container {
+    background-color: var(--Cyan-800);
+}
+
+#luxury-container {
+    background-color: var(--Green-950);
+}
