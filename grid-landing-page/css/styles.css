@@ -13,7 +13,7 @@
 @font-face {
     font-family: 'Inter';
     src: url(../assets/fonts/inter/inter-variable.ttf);
-    font-weight: normal;
+    /* font-weight: 100; */
     font-style: normal;
     font-display: swap;
 }
@@ -48,11 +48,24 @@ nav {
 }
 
 main {
+    padding: 0 var(--side-pad);
     flex: 2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-right: var(--border);
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 main p {
-    width: 300px;
+    font-size: 20px;
+    font-weight: 100;
 }
 
 .stats-container {
