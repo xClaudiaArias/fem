@@ -139,3 +139,27 @@ h2 {
     text-decoration: underline;
     cursor: pointer;
 }
+
+.close-btn {
+    display: none;
+}
+
+.close-btn.show {
+    display: block;
+}
+
+.menu-btn {
+   display: block;
+}
+
+.menu-btn.hide {
+    display: none;
+}
+
+#menu-container {
+    display: none;
+}
+
+#menu-container.active {
+    display: block;
+}

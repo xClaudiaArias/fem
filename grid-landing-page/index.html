@@ -20,15 +20,21 @@
   <!-- Nav -->
   <nav>
     <p>Bridge Collective</p>
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M4 8h16M4 16h16"/>
-    </svg>
+    <div class="menu-btns">
+      <svg class="close-btn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 6 6 18M6 6l12 12"/>
+  </svg>
+  <svg class="menu-btn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 8h16M4 16h16"/>
+  </svg>
+    </div>
+
   </nav>
 
   <div class="container">
 
   <!-- Menu panel — hidden until the hamburger is activated -->
-    <div class="menu-container">
+    <div id="menu-container">
     <ul id="menu">
       <li>About</li>
       <li>Our Work</li>
@@ -115,5 +121,25 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script>
+    const menu = document.getElementById('menu-container')
+    const menuBtn = document.querySelector('.menu-btn')
+    const closeBtn = document.querySelector('.close-btn')
+
+    menuBtn.addEventListener('click', () => {
+      console.log("i was clicked")
+      menu.classList.toggle('active')
+      closeBtn.classList.toggle('show')
+      menuBtn.classList.toggle('hide')
+    })
+
+    closeBtn.addEventListener('click', () => {
+      console.log("i was clicked")
+      menu.classList.toggle('active')
+      closeBtn.classList.toggle('show')
+      menuBtn.classList.toggle('hide')
+    })
+  </script>
 </body>
 </html>
