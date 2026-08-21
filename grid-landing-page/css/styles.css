@@ -107,3 +107,35 @@ h2 {
     display: block;
     margin-bottom: -15px;
 }
+
+.menu-dim {
+    z-index: 9980;
+    position: absolute;
+    display: flex;
+    left: 0;
+    background-color:  hsl(0, 0%, 0%, .2);
+    height: 92vh;
+    width: 70vw;
+}
+
+#menu {
+    z-index: 9999;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style-type: none;
+    align-items: end;
+    right: 0;
+    background-color: var(--Blue700);
+    height: 92vh;
+    width: 30vw;
+    padding-right: 50px;
+    padding-top: 50px;
+    font-size: 32px;
+}
+
+#menu li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
