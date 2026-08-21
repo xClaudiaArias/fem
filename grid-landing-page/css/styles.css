@@ -43,7 +43,7 @@ nav {
 
 .container {
     width: 100%;
-    height: 92%;
+    height: 84%;
     display: flex;
 }
 
@@ -54,6 +54,7 @@ main {
     justify-content: center;
     flex-direction: column;
     border-right: var(--border);
+    border-bottom: var(--border);
 }
 
 h1 {
@@ -114,7 +115,7 @@ h2 {
     display: flex;
     left: 0;
     background-color:  hsl(0, 0%, 0%, .2);
-    height: 92vh;
+    height:100vh;
     width: 70vw;
 }
 
@@ -128,7 +129,7 @@ h2 {
     align-items: end;
     right: 0;
     background-color: var(--Blue700);
-    height: 92vh;
+    height: 100vh;
     width: 30vw;
     padding-right: 50px;
     padding-top: 50px;
@@ -142,6 +143,7 @@ h2 {
 
 .close-btn {
     display: none;
+    cursor: pointer;
 }
 
 .close-btn.show {
@@ -150,6 +152,7 @@ h2 {
 
 .menu-btn {
    display: block;
+   cursor: pointer;
 }
 
 .menu-btn.hide {
@@ -162,4 +165,8 @@ h2 {
 
 #menu-container.active {
     display: block;
+}
+
+footer {
+    padding: 30px var(--side-pad);
 }
